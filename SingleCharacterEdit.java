@@ -14,29 +14,23 @@ public class SingleCharacterEdit {
     		}
     	}
     	
-    	//Insert Part
-    	if(aLength - bLength == -1) {
-    		for (int i = 0; i < aLength; i++) {
-    			if (a.charAt(i) != b.charAt(i)) {
-    				return "insert," + i + "," + b.charAt(i);
-    			}
-    		}
-    		
-    		
-    		
-    		
-    	}
+    	
     	
     	
     	//Remove Part
     	if(aLength - bLength == 1) {
-    		
-    		
-    		
-    		
-    		
-    		
+    		for (int i = 0; i<aLength; i++) {
+    			if (a.charAt(i) != b.charAt(i)) {
+    				return "remove," + i;
+    				
+    			}
+    		}
     	}
+    		
+    		
+    		
+    		
+    	
     	
     	
         return null; // this is only here to make it compile
